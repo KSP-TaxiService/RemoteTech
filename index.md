@@ -40,12 +40,12 @@ A 'working connection' is defined as a command center being able to send control
 ### Signal Processors
 Signal Processors are any part that can receive commands over a working connection, including all stock probe cores. You will only be able to control a signal processor as long as you have a working connection, and by default you will be subject to [signal delay](#signal-delay). Signal processors also include a [flight computer](guide/comp/) that can be used to schedule actions ahead of time, for example to carry out basic tasks during a communications gap.
 
-**Beware** if you do not have a working connection, you cannot send **any** commands to an unmanned probe, including commands to activate its antennas!
+**Beware:** if you do not have a working connection, you cannot send **any** commands to an unmanned probe, including commands to activate its antennas!
 
 ### Command Stations
 For those long-distance missions, it is possible to set up a team of Kerbals to act as a local command center. Setting up a command station is a major undertaking for situations where you *really* need real-time control of nearby probes. It is not something to be attempted lightly (literally).
 
-Command Stations allow you to work without the signal delay to Kerbin, which might otherwise climb up to several minutes. However, a Command Station cannot process science; a connection to KSC will still be required for that. Command Stations require [RC-L01 Remote Guidance Unit](http://wiki.kerbalspaceprogram.com/wiki/RC-L01_Remote_Guidance_Unit) and a minimum number of 6 kerbals on the same ship.
+Command Stations allow you to work without the signal delay to Kerbin, which might otherwise climb up to several minutes. However, a Command Station cannot process science; a connection to KSC will still be required for that. Command Stations require a special probe part and a minimum number of kerbals on the same ship. Consult your VAB technicians for more information.
 
 ### Science Transmissions
 Transmitting science back to KSC requires a working connection to KSC. Any other source of control, such as a crew pod or a working connection to a command station, does not count.
