@@ -14,14 +14,14 @@ RemoteTech is a modification for Squad's 'Kerbal Space Program' (KSP) which over
 
 * Like in stock KSP, you need to research Basic Science in the technology tree before you can build an unmanned probe.
 * You need to use an antenna that won't break in the atmosphere to be able to control an unmanned rocket during atmospheric flight. The Reflectron DP-10, available in Start, is the earliest such antenna available. Others can be found in the [parts listing](guide/parts/).
-* For farther flights, your probe should utilise more powerful antennas, such as the Communotron 16 or the Communotron DTS-M1. You need to manually activate these antennas once you are flying high enough that the airflow is too thin to break them off. If you are using the DTS-M1, you also need to target it at Mission Control. The activation and targetting can be performed by right-clicking on an antenna.
+* For farther flights, your probe should utilise more powerful antennas, such as the Communotron 16 or the Communotron DTS-M1. You need to manually activate these antennas once you are flying high enough that the airflow is too thin to break them off. If you are using the DTS-M1, you also need to target it at Mission Control. The activation and targeting can be performed by right-clicking on an antenna.
 * Once you place a few satellites in Kerbin orbit, consider adding some more communication satellites (comsats) to maintain a connection when out of sight of KSC. See the [tutorials](tutorials/#setting-up-satellite-constellations) for more details.
 * As you expand farther out into the system, you may need to expand and/or upgrade your comsat network to allow for connections to probes orbiting other moons or planets. Plan ahead!
 
 ## Overview of mechanics
 
 ### Antennas
-Using antennas, it is now possible to set up satellite networks to route your control input. Unlike in stock KSP,  antennas will no longer activate or deactivate automatically; you must order an antenna to activate by right-clicking on it. There are two classes of antennas: 'Dishes' and 'Omnidirectionals'.
+Using antennas, it is now possible to set up satellite networks to route your control input. Unlike in stock KSP, antennas will no longer activate or deactivate automatically; you must order an antenna to activate by right-clicking on it. There are two classes of antennas: 'Dishes' and 'Omnidirectionals'.
 
 #### Dishes
 Useful for long range communications, dishes are directional or beam antennas that must be instructed what direction to point at. They do not need to be physically rotated; you need merely select a target from a list of comsats. These dishes come with a cone of vision (which becomes narrower for a longer range). If the dish is pointed at a planet or moon, anything inside this cone can achieve a connection with the dish.
@@ -32,7 +32,7 @@ Omni antennas radiate in every direction equally, and as such do not require you
 The Kerbal Space Center has multiple dish antennas that can be pointed to different targets, making it behave like an omnidirectional antenna with a range of 75 Mm. If you want to send probes beyond Kerbin's sphere of influence, you *must* invest in some communications satellites with long-range antennas.
 
 ### Signal Delay
-To comply with Kerbal law, RemoteTech is required to delay your control input so that signaling does not exceed the 'speed of light'. If you are aware of the consequences of breaking the law (or like being a rebel), you are free to disable this in the RemoteTech settings, available as a launcher button in the KSC scene.
+To comply with Kerbal law, RemoteTech is required to delay your control input so that signalling does not exceed the 'speed of light'. If you are aware of the consequences of breaking the law (or like being a rebel), you are free to disable this in the RemoteTech settings, available as a launcher button in the KSC scene.
 
 ### Connections
 A 'working connection' is defined as a command center being able to send control input to its destination. Connections between neighbouring satellites are referred to as 'links'. To have a link between two satellites, it is required that *both* satellites [are set up to contact each other](guide/overview/#connection-rules). You have a connection when there is a sequence of links between a command center and the destination.
