@@ -19,6 +19,50 @@ After the player develops [Unmanned Tech](http://wiki.kerbalspaceprogram.com/wik
 
 The probe cores are otherwise unchanged from their [stock versions](http://wiki.kerbalspaceprogram.com/wiki/Parts#Pods).
 
+<hr>
+
+## Overview
+
+{::comment}
+Yes, the non-breaking spaces are necessary. Without them, when printing the table on a narrow screen, browsers won't be smart enough to realize that notes is the only column that word-wraps well, and will try to create eye-wrenching entries like 2500
+km
+{:/comment}
+
+### Stock antennas
+
+Kerbal Space Program has a number of antennas available, which ranges and power consumptions vary widely.
+
+Antenna | Type | Cone&nbsp;angle<br/>(degree) | Cost | Atmosphere<br/>safe | Range (Mm) | Power&nbsp;Drain<br/>(charge/s)
+--- | ---: | ---: | ---: | ---: | ---: | ---:
+Communotron 16-S | Omni | - | 300 | Yes | 1.50 | 0.02
+Communotron 16 | Omni | - | 300 | No | 2.50 | 0.13
+HG-5 High Gain Antenna | Dish | 90.000 | 600 | No | 20.00 | 0.55
+Communotron DTS-M1 | Dish | 45.000 | 900 | No | 50.00 | 0.82
+KSC Mission Control | Omni | - | - | - | 75.00 | -
+RA-2 Relay Antenna | Dish | 12.500 | 1,800 | Yes | 200.00 | 1.15
+RA-15 Relay Antenna | Dish | 0.250 | 2,400 | Yes | 10,000.00 | 1.10
+Communotron HG-55 | Dish | 0.120 | 1,200 | No | 25,000.00 | 1.04
+Communotron 88-88 | Dish | 0.060 | 1,500 | No | 40,000.00 | 0.93
+RA-100 Relay Antenna | Dish | 0.025 | 3,000 | Yes | 100,000.00 | 1.10
+{:.data}
+
+### RemoteTech antennas
+
+RemoteTech integrates the additional antennas into Kerbal Space Program. Among these antennas, the antenna, Reflectron DP-10, is the cheapest one while the Reflectron GX-128 wields the power so immense that a crash-party video can be streamed directly to Eeloo from Moho.
+
+Antenna | Type | Cone&nbsp;angle<br/>(degree) | Cost | Atmosphere<br/>safe | Range (Mm) | Power&nbsp;Drain<br/>(charge/s)
+--- | ---: | ---: | ---: | ---: | ---: | ---:
+Reflectron DP-10 | Omni | - | 60 | Yes | 0.50 | 0.01
+CommTech EXP-VR-2T | Omni | - | 400 | No | 3.00 | 0.18
+Communotron 32 | Omni | - | 600 | No | 5.00 | 0.60
+Reflectron KR-7 | Dish | 25.000 | 800 | Yes | 90.00 | 0.82
+Reflectron KR-14 | Dish | 0.040 | 2,000 | Yes | 60,000.00 | 0.93 
+CommTech-1 | Dish | 0.006 | 9,500 | Yes | 350,000.00 | 2.60
+Reflectron GX-128 | Dish | 0.005 | 11,000 | No | 400,000.00 | 2.80
+{:.data}
+
+<hr>
+
 ## Omnidirectional Antennas
 
 {::comment}
@@ -26,177 +70,229 @@ Yes, the non-breaking spaces are necessary. Without them, when printing the tabl
 km
 {:/comment}
 
-Part                | Cost | Mass            | Drag | Range          | Power Drain   | Notes
-:-------------------|-----:|:----------------|------|---------------:|:--------------|:------
-[Reflectron DP-10](#reflectron-dp-10) | 60   | 0.005&nbsp;tons | 0.2  |    500&nbsp;km | 0.01&nbsp;e/s | Activated on mission start. Not damaged by atmospheric flight
-[Communotron 16](#communotron-16) | 300  | 0.005&nbsp;tons | 0.2  |   2500&nbsp;km | 0.13&nbsp;e/s | 
-[CommTech EXP-VR-2T](#commtech-exp-vr-2t) | 400  | 0.02&nbsp;tons  | 0.0  |   3000&nbsp;km | 0.18&nbsp;e/s | 
-[Communotron 32](#communotron-32) | 600  | 0.01&nbsp;tons  | 0.2  |   5000&nbsp;km | 0.6&nbsp;e/s  | 
-KSC Mission Control |      |                 |      | 75,000&nbsp;km |               | Command Station
+The following list is of all stock and RemoteTech antennas of the omnidirectional type.
+
+Antenna | Cost | Atmosphere<br/>safe | Range (Mm) | Power&nbsp;Drain<br/>(charge/s) | Notes
+--- | ---: | ---: | ---: | ---: | ---:
+[Reflectron DP-10](#reflectron-dp-10) | 60 | Yes | 0.50 | 0.01 | Activated by default
+[Communotron 16-S](#communotron-16-s) | 300 | Yes | 1.50 | 0.02 | Activated by default
+[Communotron 16](#communotron-16) | 300 | No | 2.50 | 0.13 | 
+[CommTech EXP-VR-2T](#commtech-exp-vr-2t) | 400 | No | 3.00 | 0.18 | 
+[Communotron 32](#communotron-32) | 600 | No | 5.00 | 0.60 | Upgraded version of Communotron 16
+[KSC Mission Control](#ksc-mission-control) | - | - | 75.00 | - | Kerbin's Command Station
 {:.data}
 
-<!--All science transmissions with stock or RemoteTech antennas cost 7.5 charge per Mit, and they all drain 50 charge per second while transmitting science. This is in addition to the power drain listed in the table, which is for keeping the antenna active and searching for links.-->
+<div class="antenna" markdown="1">
 
 ### Reflectron DP-10
 
-<div class="antenna" markdown="1">
+![Picture of Reflectron DP-10](antenna_dp10.png)
 
-![Picture of Reflectron DP-10](antenna_dp10_B.png)
+**Bill Kerman's notes**
 
-The Reflectron DP-10 is a lightweight omnidirectional antenna. Its omnidirectional nature and its ability to function in atmosphere even at high speeds make it an excellent choice for launches and landings, but its short range means it rapidly becomes useless outside low Kerbin orbit. Unlike other antennas, the DP-10 is active by default, although this state can be toggled in the antenna's right-click menu.
+The Reflectron DP-10 is a lightweight and cheap antenna. Its omnidirectional nature and high-speed survival in atmosphere make it an excellent choice for launches and landings. However, its short range rapidly renders it useless outside low Kerbin orbits.
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [Flight Control](http://wiki.kerbalspaceprogram.com/wiki/Flight_Control)
-VAB Category        | Science Parts
-Manufacturer        | Parabolic Industries
-Cost                | 60
-Mass                | 0.005 tons
-Length              | 1.375 m
-Drag                | 0.2
-Comlink power       | 0.01 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [Start](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Start)
+Cost | 60
+Mass | 0.015 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 500 km
-Reach                                 | Any line of sight to KSC Mission Control, if below 150 km altitude
+| Transmission Properties
+| ---
+Comlink power | 0.01 charge/s
+Science efficiency | 7.50 charge/Mit
+Maximum Range | 500 km
+Reach | Any line of sight to Mission Control under 150 km altitude
 {:.xmit}
 
-|Atmosphere Performance
-|------------------------------------
-|Does not break in atmospheric flight.
+| Atmosphere Safety
+| ---
+|Does not break off in flight
 {:.atm}
 
----------------
+---
 
 </div>
+
+<div class="antenna" markdown="1">
+
+### Communotron 16-S
+
+![Picture of Communotron 16-S](antenna_com16s.png)
+
+**Bill Kerman's notes**
+
+The Communotron 16-S is a surface mount version of the [Communotron 16](#communotron-16), in which this antenna will not break off during a high-speed flight. However, the trade-off for this survival is a reduction in its range. Along with the Communotron 16, it forms the backbone of most players' low-orbit communications networks until the CommTech EXP-VR-2T and Communotron 32 are researched.
+{:.blurb}
+
+| Basic Properties
+--- | ---
+Tech to Unlock | [Engineering 101](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Engineering_101)
+Cost | 300
+Mass | 0.015 tons
+{:.basic}
+
+| Transmission Properties
+| ---
+Comlink power | 0.02 charge/s
+Science efficiency | 7.50 charge/Mit
+Maximum Range | 1,500 km
+Reach | Low Kerbin Orbit
+{:.xmit}
+
+| Atmosphere Safety
+| ---
+|Does not break off in flight
+{:.atm}
+
+---
+
+</div>
+
+<div class="antenna" markdown="1">
 
 ### Communotron 16
 
-<div class="antenna" markdown="1">
-
 ![Picture of Communotron 16](antenna_com16.png)
 
-As in the stock game, the Communotron 16 is the starting omnidirectional antenna, essential for transmitting science from those early flights. It also forms the backbone of most players' low-orbit communications networks until the CommTech EXP-VR-2T and Communotron 32 are researched.
+**Bill Kerman's notes**
+
+The Communotron 16 is the versatile and lightweight antenna, essential for transmitting science from your early flights. Along with the Communotron 16-S, it forms the backbone of most players' low-orbit communications networks until the CommTech EXP-VR-2T and Communotron 32 are researched.
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [None](http://wiki.kerbalspaceprogram.com/wiki/Start)
-VAB Category        | Science Parts
-Manufacturer        | Ionic Protonic Electronics
-Cost                | 300
-Mass                | 0.005 tons
-Length              | 1.5 m
-Drag                | 0.2
-Comlink power       | 0.13 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [Engineering 101](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Engineering_101)
+Cost | 300
+Mass | 0.005 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 2500 km
-Reach                                 | Low Kerbin Orbit
+| Transmission Properties
+| ---
+Comlink power | 0.13 charge/s
+Science efficiency | 7.50 charge/Mit
+Maximum Range | 2,500 km
+Reach | Low Kerbin Orbit
 {:.xmit}
 
-|Atmosphere Performance
-------------------------------------|-------------------
-Maximum ram pressure when deployed  | 6 kN/m<sup>2</sup>
-Maximum safe speed at sea level     | 99 m/s
-Maximum safe speed at 10 km         | 269 m/s
-Minimum safe altitude at 2300 m/s   | 32 km
+| Atmosphere Safety
+| ---
+|Tear off in flight when deployed
 {:.atm}
 
----------------
+---
 
 </div>
+
+<div class="antenna" markdown="1">
 
 ### CommTech EXP-VR-2T
 
-<div class="antenna" markdown="1">
-
 ![Picture of EXP-VR-2T](antenna_expvr2t.png)
 
-The CommTech EXP-VR-2T is an advanced antenna unlocked late in the tech tree. It is mounted on an extendable boom, making it much more compact than the Communotron 16 when retracted, but somewhat larger when deployed. It is slightly more powerful than the Communotron 16.
+**Bill Kerman's notes**
+
+The CommTech EXP-VR-2T is an advanced antenna unlocked late in the technology tree. Mounted on an extendable boom, the antenna is more compact than the Communotron 16 in a retracted state, but larger when deployed. Although it is inferior to the Communotron 32 in terms of maximum range, the CommTech EXP-VR-2T's comlink is incredibly efficient.
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [Specialized Electrics](http://wiki.kerbalspaceprogram.com/wiki/Specialized_Electrics)
-VAB Category        | Science Parts
-Manufacturer        | AIES Aerospace
-Cost                | 400
-Mass                | 0.005 tons
-Length              | 2 m
-Drag                | 0.2
-Comlink power       | 0.13 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [Specialized Electrics](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Specialized_Electrics)
+Cost | 500
+Mass | 0.020 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 3000 km
-Reach                                 | Low Kerbin Orbit
+| Transmission Properties
+| ---
+Comlink power | 0.18 charge/s
+Science efficiency | 7.50 charge/Mit
+Maximum Range | 3,000 km
+Reach | Low Kerbin Orbit
 {:.xmit}
 
-|Atmosphere Performance
-------------------------------------|-------------------
-Maximum ram pressure when deployed  | 6 kN/m<sup>2</sup>
-Maximum safe speed at sea level     | 99 m/s
-Maximum safe speed at 10 km         | 269 m/s
-Minimum safe altitude at 2300 m/s   | 32 km
+| Atmosphere Safety
+| ---
+|Tear off in flight when deployed
 {:.atm}
 
----------------
+---
 
 </div>
+
+<div class="antenna" markdown="1">
 
 ### Communotron 32
 
-<div class="antenna" markdown="1">
-
 ![Picture of Communotron 32](antenna_com32.png)
 
-The Communotron 32 is the most powerful omnidirectional antenna available in RemoteTech, capable of reaching past keosynchronous orbit and filling many moons' spheres of influence. However, it consumes a lot of energy when active, nearly as much as the low-end dishes.
+**Bill Kerman's notes**
+
+The Communotron 32 is the most powerful omnidirectional antenna available and capable of reaching kerbisynchronous equatorial orbits of almost 3 Mm. However, a large area of solar panels is required to satisfy the antenna's high energy demand, which is nearly as much as the low-tier dishes. Also, it is significantly larger than its cousin, the Communotron 16.
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [Large Electrics](http://wiki.kerbalspaceprogram.com/wiki/Large_Electrics)
-VAB Category        | Science Parts
-Manufacturer        | Ionic Protonic Electronics
-Cost                | 600
-Mass                | 0.01 tons
-Length              | 3 m
-Drag                | 0.2
-Comlink power       | 0.6 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [High-Power Electrics](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#High-Power_Electrics)
+Cost | 600
+Mass | 0.010 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 5000 km
-Reach                                 | Near-Kerbin space, synchronous orbit
+| Transmission Properties
+| ---
+Comlink power | 0.60 charge/s
+Science efficiency | 7.50 charge/Mit
+Maximum Range | 5,000 km
+Reach | Near-Kerbin space, synchronous orbit
 {:.xmit}
 
-|Atmosphere Performance
-------------------------------------|-------------------
-Maximum ram pressure when deployed  | 3 kN/m<sup>2</sup>
-Maximum safe speed at sea level     | 70 m/s
-Maximum safe speed at 10 km         | 190 m/s
-Minimum safe altitude at 2300 m/s   | 35 km
+| Atmosphere Safety
+| ---
+|Tear off in flight when deployed
 {:.atm}
 
----------------
+---
 
 </div>
+
+<div class="antenna" markdown="1">
+
+### KSC Mission Control
+
+![Picture of KSC Mission Control](ksc_mission_control.png)
+
+**Bill Kerman's notes**
+
+At the Kerbal Space Center, the Mission Control establishes and maintains connections through the Tracking Station with every antenna-equipped vessel in the Kerbol system. Moreover, it acts as a permanent command station to issue commands to an unmanned probe over its working connection.
+{:.blurb}
+
+| Basic Properties
+--- | ---
+Tech to Unlock | -
+Cost | -
+Mass | Immeasurable
+{:.basic}
+
+| Transmission Properties
+| ---
+Comlink power | -
+Science efficiency | -
+Maximum Range | 75,000 km
+Reach | Kerbin's two natural satellites, Mun and Minmus
+{:.xmit}
+
+| Atmosphere Safety
+| ---
+| Not certified to fly
+{:.atm}
+
+---
+
+</div>
+
+<hr>
 
 ## Dish Antennas
 
@@ -205,272 +301,437 @@ Yes, the non-breaking spaces are necessary. Without them, when printing the tabl
 km
 {:/comment}
 
-Antenna           | Cost | Mass            | Drag | Cone | Range          | Power Drain   | Notes
-:-----------------|-----:|:----------------|------|:-----------|---------------:|:--------------|:------
-[Comms DTS-M1](#comms-dts-m1) | 600  | 0.03&nbsp;tons  | 0.2  | 45&deg;    | 50,000&nbsp;km | 0.82&nbsp;e/s | 
-[Reflectron KR-7](#reflectron-kr-7) | 800  | 0.5&nbsp;tons   | 0.2  | 25&deg;    | 90,000&nbsp;km | 0.82&nbsp;e/s | Not damaged by atmospheric flight
-[Communotron 88-88](#communotron-88-88) | 1100  | 0.025&nbsp;tons | 0.2  | 0.06&deg;  | 40M&nbsp;km    | 0.93&nbsp;e/s | 
-[Reflectron KR-14](#reflectron-kr-14) | 2000  | 1.0&nbsp;tons   | 0.2  | 0.04&deg;  | 60M&nbsp;km    | 0.93&nbsp;e/s | Not damaged by atmospheric flight
-[CommTech-1](#commtech-1) | 9500  | 1.0&nbsp;tons   | 0.2  | 0.006&deg; | 350M&nbsp;km   | 2.6&nbsp;e/s  | Not damaged by atmospheric flight
-[Reflectron GX-128](#reflectron-gx-128) | 11000  | 0.5&nbsp;tons   | 0.2  | 0.005&deg; | 400M&nbsp;km   | 2.8&nbsp;e/s  | 
+The following list is of all stock and RemoteTech antennas of the dish type.
+
+Antenna | Cost | Atmosphere<br/>safe | Cone&nbsp;angle<br/>(degree) | Range (Mm) | Power&nbsp;Drain<br/>(charge/s) | Notes
+--- | ---: | ---: | ---: | ---: | ---: | ---:
+[HG-5 High Gain Antenna](#hg-5-high-gain-antenna) | 600 | No | 90.000 | 20.00 | 0.55 | 
+[Communotron DTS-M1](#communotron-dts-m1) | 900 | No | 45.000 | 50.00 | 0.82 | 
+[Reflectron KR-7](#reflectron-kr-7) | 800 | Yes | 25.000 | 90.00 | 0.82 | 
+[RA-2 Relay Antenna](#ra-2-relay-antenna) | 1,800 | Yes | 12.500 | 200.00 | 1.15 | Cover Kerbin's sphere of influence
+[RA-15 Relay Antenna](#ra-15-relay-antenna) | 2,400 | Yes | 0.250 | 10,000.00 | 1.10 | 
+[Communotron HG-55](#communotron-hg-55) | 1,200 | No | 0.120 | 25,000.00 | 1.04 | 
+[Communotron 88-88](#communotron-88-88) | 1,500 | No | 0.060 | 40,000.00 | 0.93 | 
+[Reflectron KR-14](#reflectron-kr-14) | 2,000 | Yes | 0.040 | 60,000.00 | 0.93  | 
+[RA-100 Relay Antenna](#ra-100-relay-antenna) | 3,000 | Yes | 0.025 | 100,000.00 | 1.10 | 
+[CommTech-1](#commtech-1) | 9,500 | Yes | 0.006 | 350,000.00 | 2.60 | 
+[Reflectron GX-128](#reflectron-gx-128) | 11,000 | No | 0.005 | 400,000.00 | 2.80 | Range is more than twice as wide as Kerbol System
 {:.data}
-
-**Warning:** the Reflectron SS-5 and Reflectron LL-5 are legacy parts included for backward compatibility. Do not use these parts in new spacecraft, as they will be removed in an upcoming release of RemoteTech.
-{: .alert}
-
-### Comms DTS-M1
 
 <div class="antenna" markdown="1">
 
-![Picture of Comms DTS-M1](antenna_dtsm1_B.png)
+### HG-5 High Gain Antenna
 
-The Comms DTS-M1 is the shortest-ranged of the directional dishes. Its wide cone makes it perfect for maintaining contact with multiple satellites within Kerbin's sphere of influence.
+![Picture of HG-5 High Gain Antenna](antenna_hg5.png)
+
+**Bill Kerman's notes**
+
+The HG-5 High Gain Antenna is the shortest-ranged of the directional dishes. With its wide cone, this antenna can easily maintain contact with multiple satellites orbiting Kerbin at 100 km from a relatively low altitude.
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [Science Tech](http://wiki.kerbalspaceprogram.com/wiki/Science_Tech)
-VAB Category        | Science Parts
-Manufacturer        | Ionic Symphonic Protonic Electronics
-Cost                | 600
-Mass                | 0.03 tons
-Dimensions          | 1 &times; 0.75  m
-Drag                | 0.2
-Comlink power       | 0.82 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [Basic Science](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Basic_Science)
+Cost | 600
+Mass | 0.070 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 50,000 km
-Reach                                 | Minmus
-Cone Diameter                         | 45&deg;
-Cone covers Kerbin at                 | 1600 km
-Cone covers keosynchronous orbit at | 9100 km
+| Transmission Properties
+| ---
+Comlink power | 0.55 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 20,000 km
+Reach | Mun
+Cone angle | 90.000&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 700 km
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 3,500 km
 {:.xmit}
 
-|Atmosphere Performance
-------------------------------------|-------------------
-Maximum ram pressure when deployed  | 6 kN/m<sup>2</sup>
-Maximum safe speed at sea level     | 99 m/s
-Maximum safe speed at 10 km         | 269 m/s
-Minimum safe altitude at 2300 m/s   | 32 km
+| Atmosphere Safety
+| ---
+| Tear off in flight when deployed
 {:.atm}
 
----------------
+---
 
 </div>
+
+<div class="antenna" markdown="1">
+
+### Communotron DTS-M1
+
+![Picture of Communotron DTS-M1](antenna_dtsm1.png)
+
+**Bill Kerman's notes**
+
+The Communotron DTS-M1 is the next step up from the HG-5 High Gain Antenna in terms of range, fund cost and power drain. Its cone is wide enough to comfortably command satellites orbiting Kerbin at 100 km from a relatively low altitude.
+{:.blurb}
+
+| Basic Properties
+--- | ---
+Tech to Unlock | [Precision Engineering](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Precision_Engineering)
+Cost | 900
+Mass | 0.050 tons
+{:.basic}
+
+| Transmission Properties
+| ---
+Comlink power | 0.82 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 50,000 km
+Reach | Minmus
+Cone angle | 45.000&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 1,700 km
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 8,500 km
+{:.xmit}
+
+| Atmosphere Safety
+| ---
+| Tear off in flight when deployed
+{:.atm}
+
+---
+
+</div>
+
+<div class="antenna" markdown="1">
 
 ### Reflectron KR-7
 
-<div class="antenna" markdown="1">
-
 ![Picture of Reflectron KR-7](antenna_refl7.png)
 
-The Reflectron KR-7 is the second short-range antenna available from RemoteTech. It has a longer range than the Comms DTS-M1, making it well-suited for spacecraft beyond Minmus's orbit. However, its narrow cone reduces its effectiveness at the Mun's distance or closer. The Reflectron KR-7 is too sturdy to be ripped off by atmospheric flight, so if properly targeted it can replace the Reflectron DP-10 as a launch antenna.
+**Bill Kerman's notes**
+
+The Reflectron KR-7 has a longer range than the Communotron DTS-M1, making it well-suited for a spacecraft beyond Minmus's orbit. However, its narrower cone reduces its coverage effectiveness at the Mun's altitude or lower. 
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [Electrics](http://wiki.kerbalspaceprogram.com/wiki/Tech_tree#Electrics)
-VAB Category        | Science Parts
-Manufacturer        | Parabolic Industries
-Cost                | 800
-Mass                | 0.5 tons
-Diameter            | 1.375 m
-Drag                | 0.2
-Comlink power       | 0.82 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [Electrics](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Electrics)
+Cost | 800
+Mass | 0.050 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 90,000 km
-Reach                                 | Kerbin sphere of influence
-Cone Diameter                         | 25&deg;
-Cone covers Kerbin at                 | 2800 km
-Cone covers keosynchronous orbit at | 16,000 km
+| Transmission Properties
+| ---
+Comlink power | 0.82 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 90,000 km
+Reach | Kerbin's sphere of influence
+Cone angle | 25.000&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 3,200 km
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 16,000 km
 {:.xmit}
 
-|Atmosphere Performance
-|------------------------------------
-|Does not break in atmospheric flight.
+| Atmosphere Safety
+| ---
+| Does not break off in flight
 {:.atm}
 
----------------
+---
 
 </div>
+
+<div class="antenna" markdown="1">
+
+### RA-2 Relay Antenna
+
+![Picture of RA-2 Relay Antenna](antenna_ra2.png)
+
+**Bill Kerman's notes**
+
+This adorable antenna, RA-2 Relay Antenna, represents a compromise on the cone angle, range and fund cost. It packs a broad and serious punch for a reasonable price.
+{:.blurb}
+
+| Basic Properties
+--- | ---
+Tech to Unlock | [Precision Engineering](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Precision_Engineering)
+Cost | 1,800
+Mass | 0.150 tons
+{:.basic}
+
+| Transmission Properties
+| ---
+Comlink power | 1.15 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 200 Mm
+Reach | Kerbin's sphere of influence
+Cone angle | 12.500&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 6,400 km
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 32,000 km
+{:.xmit}
+
+| Atmosphere Safety
+| ---
+| Does not break off in flight
+{:.atm}
+
+---
+
+</div>
+
+<div class="antenna" markdown="1">
+
+### RA-15 Relay Antenna
+
+![Picture of RA-15 Relay Antenna](antenna_ra15.png)
+
+**Bill Kerman's notes**
+
+The RA-15 Relay Antenna is the first antenna to break the 1-Gm range barrier. However, the antenna is suitable for short-range and temporary interplanetary communications only. Moreover, its narrow cone of less than 1&deg; requires players to aim the antenna at a specific comsat instead of a constellation of satellites when maintaining a working connection.
+{:.blurb}
+
+| Basic Properties
+--- | ---
+Tech to Unlock | [Electronics](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Electronics)
+Cost | 2,400
+Mass | 0.300 tons
+{:.basic}
+
+| Transmission Properties
+| ---
+Comlink power | 1.10 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 10 Gm
+Reach | Moho (same side of sun only), <br/>Eve (same side of sun only), <br/>Duna (same side of sun only)
+Cone angle | 0.250&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 320 Mm
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 1,700 Mm
+{:.xmit}
+
+| Atmosphere Safety
+| ---
+| Does not break off in flight
+{:.atm}
+
+---
+
+</div>
+
+<div class="antenna" markdown="1">
+
+### Communotron HG-55
+
+![Picture of Communotron HG-55](antenna_hg55.png)
+
+**Bill Kerman's notes**
+
+The Communotron HG-55 is mounted on a foldable arm, allowing it to be attached to a smaller satellite than the RA-15 Relay Antenna, which requires a larger cross-section area. In addition, the longer range enables it to reach Moho and Eve easily at all the times. Like the other antenna, this antenna requires a specific direction to a single comsat instead of a wide communication net.
+{:.blurb}
+
+| Basic Properties
+--- | ---
+Tech to Unlock | [Electronics](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Electronics)
+Cost | 1,200
+Mass | 0.075 tons
+{:.basic}
+
+| Transmission Properties
+| ---
+Comlink power | 1.04 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 25 Gm
+Reach | Moho (all times), Eve (all times), <br/>Duna (same side of sun only)
+Cone angle | 0.120&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 670 Mm
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 3,400 Mm
+{:.xmit}
+
+| Atmosphere Safety
+| ---
+| Tear off in flight when deployed
+{:.atm}
+
+---
+
+</div>
+
+<div class="antenna" markdown="1">
 
 ### Communotron 88-88
 
-<div class="antenna" markdown="1">
-
 ![Picture of Communotron 88-88](antenna_com88-88.png)
 
-The Communotron 88-88 is by far the lightest interplanetary antenna. It can easily reach all the inner planets, and can even contact Dres when it is on the same side of the sun as Kerbin. However, its narrow cone means that players will have to point it at a specific satellite if they wish to make course corrections while en route to Eve or Duna.
+**Bill Kerman's notes**
+
+The Communotron 88-88 is by far the most compact interplanetary antenna in the retracted state. It can easily reach all the inner planets, and can even contact Dres when it is on the same side of the sun as Kerbin. However, its narrow cone means that players will have to point it at a specific comsat for a working connection.
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [Electronics](http://wiki.kerbalspaceprogram.com/wiki/Electronics)
-VAB Category        | Science Parts
-Manufacturer        | Ionic Protonic Electronics
-Cost                | 1100
-Mass                | 0.025 tons
-Diameter            | 2.375 m
-Drag                | 0.2
-Comlink power       | 0.93 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [Automation](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Automation)
+Cost | 1,500
+Mass | 0.100 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 40,000,000 km
-Reach                                 | Duna (all times), Dres (same side of sun only)
-Cone Diameter                         | 0.06&deg;
-Cone covers Kerbin at                 | 1,100,000 km
-Cone covers keosynchronous orbit at | 6,600,000 km
+| Transmission Properties
+| ---
+Comlink power | 0.93 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 40 Gm
+Reach | Duna (all times), <br/>Dres (same side of sun only)
+Cone angle | 0.060&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 1,400 Mm
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 6,700 Mm
 {:.xmit}
 
-|Atmosphere Performance
-------------------------------------|-------------------
-Maximum ram pressure when deployed  | 6 kN/m<sup>2</sup>
-Maximum safe speed at sea level     | 99 m/s
-Maximum safe speed at 10 km         | 269 m/s
-Minimum safe altitude at 2300 m/s   | 32 km
+| Atmosphere Safety
+| ---
+| Tear off in flight when deployed
 {:.atm}
 
----------------
+---
 
 </div>
+
+<div class="antenna" markdown="1">
 
 ### Reflectron KR-14
 
-<div class="antenna" markdown="1">
-
 ![Picture of Reflectron KR-14](antenna_refl14.png)
 
-The Reflectron KR-14 is an intermediate-range interplanetary antenna. It can easily reach all the inner planets as well as Dres. Like the Communotron-88, the KR-14 has a narrow cone and will have difficulty "seeing" communications satellites if pointed directly at Kerbin from too close a range.
+**Bill Kerman's notes**
+
+The Reflectron KR-14 is a large intermediate-range interplanetary antenna. It can easily reach all the inner planets as well as Dres. Like the Communotron-88, the KR-14 has a narrow cone and will have difficulty "seeing" communications satellites if pointed directly at Kerbin from too close a range.
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [Large Electrics](http://wiki.kerbalspaceprogram.com/wiki/Large_Electrics)
-VAB Category        | Science Parts
-Manufacturer        | Parabolic Industries
-Cost                | 2200
-Mass                | 1.0 tons
-Diameter            | 2.75 m
-Drag                | 0.2
-Comlink power       | 0.93 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [High-Power Electrics](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#High-Power_Electrics)
+Cost | 2,000
+Mass | 0.100 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 60,000,000 km
-Reach                                 | Dres (all times), Jool (same side of sun only), Eeloo (periapsis and same side of sun only)
-Cone Diameter                         | 0.04&deg;
-Cone covers Kerbin at                 | 1,700,000 km
-Cone covers keosynchronous orbit at | 9,900,000 km
+| Transmission Properties
+| ---
+Comlink power | 0.93 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 60 Gm
+Reach | Dres (all times), <br/>Jool (same side of sun only), <br/>Eeloo (periapsis and same side of sun only)
+Cone angle | 0.040&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 2,100 Mm
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 10 Gm
 {:.xmit}
 
-|Atmosphere Performance
-|------------------------------------
-|Does not break in atmospheric flight.
+| Atmosphere Safety
+| ---
+| Does not break off in flight
 {:.atm}
 
----------------
+---
 
 </div>
+
+<div class="antenna" markdown="1">
+
+### RA-100 Relay Antenna
+
+![Picture of RA-100 Relay Antenna](antenna_ra100.png)
+
+**Bill Kerman's notes**
+
+The RA-100 Relay Antenna is a long-range interplanetary antenna and can reliably contact a satellite at Jool at all the time. However, its large cross-section renders all but the largest rockets useless to send up. Like the other dishes, the direction to a specific satellite is required in order to establish a working connection as the antenna's cone is too narrow to cast a wide sweep on an entire satellite net.
+{:.blurb}
+
+| Basic Properties
+--- | ---
+Tech to Unlock | [Automation](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Automation)
+Cost | 3,000
+Mass | 0.650 tons
+{:.basic}
+
+| Transmission Properties
+| ---
+Comlink power | 1.10 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 100 Gm
+Reach | Jool (all times), Eeloo (periapsis only)
+Cone angle | 0.025&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 3,300 Mm
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 17 Gm
+{:.xmit}
+
+| Atmosphere Safety
+| ---
+| Does not break off in flight
+{:.atm}
+
+---
+
+</div>
+
+<div class="antenna" markdown="1">
 
 ### CommTech-1
 
-<div class="antenna" markdown="1">
-
 ![Picture of CommTech-1](antenna_ct1.png)
 
-The CommTech-1 is the first antenna capable of returning signals to Kerbin from the outer solar system. Despite the in-game description, it can reach any planet available in version 0.23.5 of the game, even Eeloo at apoapsis. However, it has an extremely narrow cone; players should avoid using the dish in cone mode until they pass the orbit of Dres. Even a satellite in orbit around Jool may have occasional connection problems when using cone mode, as it can approach within 52 million km of Kerbin.
+**Bill Kerman's notes**
 
-For players using Planet Factory, the CommTech-1 can reach Inaccessable and Sentar, but not Serious, Stella, or Barry.
+The CommTech-1 is the first interplanetary antenna capable of reaching any planet, even Eeloo at apoapsis. However, the antenna has an extremely narrow cone of 0.01&deg; so players should avoid using it until they pass the orbit of Dres. It also may be emphasized that its energy consumption is high in the operation mode.
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [Specialized Electrics](http://wiki.kerbalspaceprogram.com/wiki/Specialized_Electrics)
-VAB Category        | Science Parts
-Manufacturer        | AIES Aerospace
-Cost                | 9500
-Mass                | 1.0 tons
-Diameter            | 3.5 m
-Drag                | 0.2
-Comlink power       | 2.60 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [Specialized Electrics](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Specialized_Electrics)
+Cost | 9,500
+Mass | 0.300 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 350,000,000 km
-Reach                                 | Eeloo (all times)
-Cone Diameter                         | 0.006&deg;
-Cone covers Kerbin at                 | 11,000,000 km
-Cone covers keosynchronous orbit at | 66,000,000 km
+| Transmission Properties
+| ---
+Comlink power | 2.60 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 350 Gm
+Reach | Eeloo (all times)
+Cone angle | 0.006&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 14 Gm
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 67 Gm
 {:.xmit}
 
-|Atmosphere Performance
-|------------------------------------
-|Does not break in atmospheric flight.
+| Atmosphere Safety
+| ---
+| Does not break off in flight
 {:.atm}
 
----------------
+---
 
 </div>
 
-### Reflectron GX-128
-
 <div class="antenna" markdown="1">
 
-![Picture of GX-128](antenna_gx128.png)
+### Reflectron GX-128
 
-The Reflectron-GX-128 is the longest-range antenna available in RemoteTech. While it has, for all practical purposes, the same abilities as the CommTech-1, its foldable construction makes it much lighter.
+![Picture of Reflectron GX-128](antenna_gx128.png)
+
+**Bill Kerman's notes**
+
+The Reflectron GX-128 is a marvel of engineering, transmitting at tremendous power through the dozen lights of void. It is one of the most advanced radio transmitters the KSC's engineering division had ever developed, and capable to reach Eeloo at ease. While this antenna has, for all practical purposes, the same abilities as the CommTech-1, its foldable construction makes it much lighter and small in cross-section.
 {:.blurb}
 
-|Basic Properties
---------------------|-------------------
-Tech to Unlock      | [Advanced Science Tech](http://wiki.kerbalspaceprogram.com/wiki/Advanced_Science_Tech)
-VAB Category        | Science Parts
-Manufacturer        | Parabolic Industries
-Cost                | 11000
-Mass                | 0.5 tons
-Diameter            | 6.5 m
-Drag                | 0.2
-Comlink power       | 2.80 charge/s
-Science power       | 50 charge/s
-Science efficiency  | 7.5 charge/Mit
+| Basic Properties
+--- | ---
+Tech to Unlock | [Advanced Science Tech](http://wiki.kerbalspaceprogram.com/wiki/Technology_tree#Advanced_Science_Tech)
+Cost | 11,000
+Mass | 0.240 tons
 {:.basic}
 
-|Transmission Properties
---------------------------------------|-------------------
-Maximum Range                         | 400,000,000 km
-Reach                                 | Eeloo (all times)
-Cone Diameter                         | 0.005&deg;
-Cone covers Kerbin at                 | 14,000,000 km
-Cone covers keosynchronous orbit at | 79,000,000 km
+| Transmission Properties
+| ---
+Comlink power | 2.80 charge/s
+Science efficiency | 7.5 charge/Mit
+Maximum Range | 400 Gm
+Reach | Eeloo (all times)
+Cone angle | 0.005&deg;
+Cone covering Kerbin (0.7&nbsp;Mm altitude) at | 17 Gm
+Cone covering keosynchronous orbit (2.9&nbsp;Mm altitude) at | 81 Gm
 {:.xmit}
 
-|Atmosphere Performance
-------------------------------------|-------------------
-Maximum ram pressure when deployed  | 6 kN/m<sup>2</sup>
-Maximum safe speed at sea level     | 99 m/s
-Maximum safe speed at 10 km         | 269 m/s
-Minimum safe altitude at 2300 m/s   | 32 km
+| Atmosphere Safety
+| ---
+| Tear off in flight when deployed
 {:.atm}
 
----------------
+---
 
 </div>

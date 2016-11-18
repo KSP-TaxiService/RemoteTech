@@ -1,32 +1,26 @@
 /** Custom CSS for pretty display of antenna specs
- * @file antennas.css
- * @author Starstrider42
  * @date Created March 11, 2014
- * @date Last modified March 12, 2014
+ * @date Last modified Nov 16, 2016
  */
 
 div.antenna {
 	border-width: 1px;
 	border-style: solid;
-	padding: 2px;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	padding: 3px;
 	border-color: rgb(192,192,192);
 	background-color: rgb(248,248,248);
+}
+
+div.antenna h3 {
+	margin-top: 2;
 }
 
 div.antenna img {
 	float: left;
 	clear: left;
-	min-height: 200px;
-	max-height: 400px;
-	max-width: 40%;
-	padding: 2px;
 	padding-right: 5px;
-}
-
-div.antenna table {
-/*	background-color: rgb(238,238,238);*/
-/*	border-color: rgb(227,227,227);*/
-	margin: 2px;
 }
 
 div.antenna p.blurb {
@@ -49,19 +43,25 @@ div.antenna hr {
 div.antenna .basic {
 	float: right;
 	clear: right;
-	width: 49%;
+	width: 55%;
+	margin-bottom: 10px;
 }
 
 div.antenna .xmit {
 	float: right;
 	clear: right;
-	width: 49%;
+	width: 55%;
 }
 
 div.antenna .atm {
 	float: right;
 	clear: none;
-	width: 49%;
+	width: 55%;
+	margin-top: 10px;
+}
+
+div.antenna .basic tbody, div.antenna .xmit tbody, div.antenna .atm tbody{
+	vertical-align: text-top;
 }
 
 div.antenna .basic td, div.antenna .xmit td {
